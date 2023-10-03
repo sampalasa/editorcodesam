@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éditeur de code en ligne</title>
+  <meta name="description" content="Ceci est un éditeur de code en ligne pour HTML, CSS et JavaScript.">
+  <meta name="keywords" content="Éditeur de code en temps reel, éditeur de code en ligne, éditeur HTML en direct, éditeur CSS en direct, éditeur JavaScript en direct">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header-wrap">
+    <h1>Éditeur de code online</h1>
+    <h4>Compilez HTML, CSS et JavaScript sur le web en temps réel</h4>
+  </div>
+  <div id="ide-parent">
+    <div id="button-wrapper">
+      <button onclick="switchPanel(0)">HTML</button>
+      <button onclick="switchPanel(1)">CSS</button>
+      <button onclick="switchPanel(2)">JavaScript</button>
+      <button onclick="runEdit(3)">Résultat</button>
+    </div>
+    <div id="ide-container">
+      <div class="panel-wrapper">
+        <div id="html">
+          &lt;!--le HTML est prédéfini, mais modifiable --&gt;
+
+          &lt;table&gt; 
+          &lt;thead&gt;
+          &lt;tr&gt;
+          &lt;th>Nom&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+          &lt;tr&gt;
+          &lt;td>Likeur Off&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td>Sam Kompany&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td>Pax Mk&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td>Big Data&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/tbody&gt;
+            &lt;/table&gt;
+
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="css">
+          /* CSS prédéfini, mais modifiable */
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+          }
+          
+          th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+          
+          th {
+            background-color: #f2f2f2;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #f8f8f8;
+          }
+          
+          tr:hover {
+            background-color: #e6e6e6;
+          }
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="js">
+          // JavaScript prédéfini, mais modifiable
+
+          alert("salut c'es sam palasa");
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <iframe id="result"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+
+  </div>
+  <div class="footer">
+    <div class="inner-wrap">
+      <p>&#169; <span></span>big data</p>
+      <div class="icons-wrap">
+       
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="server.js"></script>
+</body>
+
+</html>
